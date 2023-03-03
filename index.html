@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="artSong-title"></div>
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <input type="range"
+        id="progress-bar"
+        min="0"
+        max=""
+        value="0"/>
+        <div class="currentTime"></div>
+        <div>/</div>
+        <div class="durationTime"></div>
+        <div class="volume-container">
+          <div class="volume-button">
+            <div class="volume icono-volumeMedium player-icon"></div>
+          </div>
+          <div class="volume-slider">
+            <div class="volume-percentage"></div>
+          </div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+        <span class="wind"></span>
+        <span class="humidity"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time" ></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="quote-container">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="settings">
+      <ul class="settings-list">
+        <li class="setting-items">
+          <label for="language" id="Language">Language</label>
+          <select name="langSelect" class="langSelect">
+            <option value="en">En</option>
+            <option value="ru">Ru</option>
+          </select>
+        <li class="setting-items">
+          <label for="time" id="Time">Time</label>
+          <label class="checkbox">
+          <input type="checkbox" name="time">
+          <span class="checkbox-switch"></span>
+        </label>
+        </li>
+        <li class="setting-items">
+          <label for="date" id="Date">Date</label>
+          <label class="checkbox">
+          <input type="checkbox" name="date">
+          <span class="checkbox-switch"></span>
+        </label>
+        </li>
+        <li class="setting-items">
+          <label for="greeting" id="Greeting">Greeting</label>
+          <label class="checkbox">
+          <input type="checkbox" name="greeting-container">
+          <span class="checkbox-switch"></span>
+        </label>
+        </li>
+        <li class="setting-items">
+          <label for="quote" id="Quote">Quote</label>
+          <label class="checkbox">
+          <input type="checkbox" name="quote-container">
+          <span class="checkbox-switch"></span>
+        </label>
+        </li>
+        <li class="setting-items">
+          <label for="weather" id="Weather">Weather</label>
+          <label class="checkbox">
+          <input type="checkbox" name="weather">
+          <span class="checkbox-switch"></span>
+        </label>
+        </li>
+        <li class="setting-items">
+          <label for="audio" id="Audio">Audio</label>
+          <label class="checkbox">
+          <input type="checkbox" name="player">
+          <span class="checkbox-switch"></span>
+        </label>
+        </li>
+      </ul>
+    </div>
+    <button class="setting setting-icon"></button>
+    <div class="footer-data">
+      <p class="footer-data-size">© 2023</p>
+      <a href="https://github.com/GEKKO-ops" target="_blank" class="footer-link">github</a>
+      <a href="https://rs.school/js-stage0/" target="_blank"><img src="./assets/svg/rs_school_js.svg" alt="logo" width="121" height="45" ></a>
+     </div>
+     
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
